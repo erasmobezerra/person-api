@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@Data // cria getters, setters, toString, equalsAndHashCode
+@Builder // Cria uma classe interna Builder que permite criar um objeto de forma fluente, assim deixando o código mais simples e funcional,
+@AllArgsConstructor // gera o construtor com todos os argumentos
+@NoArgsConstructor // gera construtor padrão vazio@AllArgsConstructor
 public class Person {
 
     @Id
