@@ -29,19 +29,19 @@ e visualizar a execução do projeto:
 http://localhost:8080/api/v1/people
 ```
 
-##
-### Documentação pelo Swagger
-Para documentar e testar os serviços RESTFULL por meio do envio de requisições HTTP e da análise do seu retorno, acesse:
+E para documentar e testar os serviços RESTFULL por meio do envio de 
+requisições HTTP, você pode utilize o Postman ou o swagger:
 ```
 http://localhost:8080/swagger-ui.html#/person-controller/
 ```
 
-##
-### Deploy no Heroku
+### Deploy 
 * Acesse o projeto hospedado no Heroku:
 ```
 https://person-apirestfull.herokuapp.com/api/v1/people
 ```
+Utilizando o Postman, você pode direcionar as requisições
+para o endereço no Heroku acima para consumir a API na nuvem,
 
 ##
 ### Slides
