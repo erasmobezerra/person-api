@@ -13,7 +13,7 @@ Pré-requisitos necessários para a execução deste projeto:
 * Java 11 ou versões superiores.
 * Maven 3.6.3 ou versões superiores.
 * Intellj IDEA Community Edition ou sua IDE favorita.
-* Muita vontade de aprender e compartilhar conhecimento :)
+* Postman para testar serviços da API
 
 ##
 Para executar o projeto no terminal, digite o seguinte comando:
@@ -22,11 +22,28 @@ Para executar o projeto no terminal, digite o seguinte comando:
 mvn spring-boot:run 
 ```
 
-Após executar o comando acima, basta apenas abrir o seguinte endereço e visualizar a execução do projeto:
+Após executar o comando acima, basta apenas abrir o seguinte endereço 
+e visualizar a execução do projeto:
 
 ```
 http://localhost:8080/api/v1/people
 ```
 
+##
+### Documentação pelo Swagger
+Para documentar e testar os serviços RESTFULL por meio do envio de requisições HTTP e da análise do seu retorno, acesse:
+```
+http://localhost:8080/swagger-ui.html#/person-controller/
+```
+
+##
+### Deploy no Heroku
+* Acesse o projeto hospedado no Heroku:
+```
+https://person-apirestfull.herokuapp.com/api/v1/people
+```
+
+##
+### Slides
 [Neste link](https://drive.google.com/file/d/1crVPOVl6ok2HeYjh3fjQuGQn2lDZVHrn/view?usp=sharing), 
-seguem os slides utilizados pelo professor Rodrigo Peleias como roteiro utilizado para o desenvolvimento da API Restfull.
+é possível encontrar os slides utilizados pelo professor Rodrigo Peleias como roteiro utilizado para o desenvolvimento da API Restfull.
