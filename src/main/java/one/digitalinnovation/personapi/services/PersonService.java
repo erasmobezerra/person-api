@@ -17,6 +17,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
+    // USUÁRIO <-->  PersonDTO <-->  Person  <--> Banco de Dados
+
     private final PersonRepository personRepository;
 
     private final PersonMapper personMapper;
@@ -26,7 +28,6 @@ public class PersonService {
         Person savedPerson = personRepository.save(person);
 
         MessageResponseDTO messageResponse = createMessageResponse("Person successfully created with ID ", savedPerson.getId());
-
         return messageResponse;
     }
 
@@ -45,14 +46,13 @@ public class PersonService {
     }
 
     public MessageResponseDTO update(Long id, PersonDTO personDTO) throws PersonNotFoundException {
-        personRepository.findById(id)
-                .orElseThrow(() -> new PersonNotFoundException(id));
+
+        personRepository.findById(id).orElseThrow(() -> new PersonNotFoundException(id));
 
         Person updatedPerson = personMapper.toModel(personDTO);
         Person savedPerson = personRepository.save(updatedPerson);
 
         MessageResponseDTO messageResponse = createMessageResponse("Person successfully updated with ID ", savedPerson.getId());
-
         return messageResponse;
     }
 

@@ -26,7 +26,15 @@ import java.util.List;
 public class PersonController {
 
     private final PersonService personService;
+/*
 
+@ResponseStatus
+
+Esta annotation pode ser usada para substituir o código de resposta HTTP de uma resposta(response).
+Você pode usar esta anotação para manipulação de erros ao desenvolver uma aplicação Web ou serviço
+RESTful usando o Spring
+
+*/
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO create(@RequestBody @Valid PersonDTO personDTO) {
