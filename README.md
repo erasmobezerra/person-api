@@ -1,7 +1,7 @@
 #  Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot
 ##
 Este projeto se trata de um sistema básico para o gerenciamento de pessoas e foi desenvolvido durante
-no curso **Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot**, ministrado
+o curso **Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot**, ministrado
 pelo professor <a href="https://www.linkedin.com/in/rodrigopeleias/">Rodrigo Peleias</a>.
 
 O projeto original implementado pelo professor você pode encontrar
