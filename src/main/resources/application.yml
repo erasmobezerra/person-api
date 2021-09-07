@@ -1,0 +1,19 @@
+# Configuração para integração com banco PostgreSQL
+server:
+  port: 8080
+  servlet:
+    context-path: /personapi
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: postgres://pvcjpcwumghdey:93a9dd16ee1f5a17d2fc31355b957d8ea74cb786dbae9e53b72806a8f4b879d3@ec2-44-196-170-156.compute-1.amazonaws.com:5432/df0095kcs88414
+    username: pvcjpcwumghdey
+    password: 93a9dd16ee1f5a17d2fc31355b957d8ea74cb786dbae9e53b72806a8f4b879d3
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: none
+
