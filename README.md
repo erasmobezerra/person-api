@@ -40,6 +40,10 @@ http://localhost:8080/swagger-ui.html#/person-controller/
 ```
 https://person-apirestfull.herokuapp.com/api/v1/people
 ```
+* Consumir e Documentar a API hospedada na nuvem:
+```
+https://person-apirestfull.herokuapp.com/personapi/swagger-ui.html#/person-controller
+```
 Utilizando o Postman, você pode direcionar as requisições
 para o endereço no Heroku acima para consumir a API na nuvem,
 
