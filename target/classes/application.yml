@@ -1,4 +1,4 @@
-## Configuração para integração com banco PostgreSQL
+## Configuração para integração com banco PostgreSQL no HEROKU
 #server:
 #  port: 8080
 #  servlet:
@@ -16,4 +16,23 @@
 #    generate-ddl: true
 #    hibernate:
 #      ddl-auto: none
-#
+
+## DATASOURCE
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+## H2 Console
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+## JPA
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
